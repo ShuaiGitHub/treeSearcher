@@ -1,0 +1,61 @@
+package tree;
+import java.util.Random;
+import java.util.Stack;
+public class searchTree {
+			node head;	
+			public searchTree(){
+				head=null;
+			}
+			public node getHead(){
+				return head;
+			}
+			public void printTree() throws NullPointerException{
+				if(head==null){
+					throw new NullPointerException();
+				}
+				else{
+					DFS(head);
+				}
+			}
+			public void searchNode(node cur)
+			public void DFS(node cur){
+				if(cur==null){
+					return;
+				}
+				else{
+					System.out.println(cur);
+					DFS(cur.getLeft());
+					DFS(cur.getRight());
+				}
+			}
+			public void addNode(node newNode){
+				if (head==null){
+					head=newNode;
+					System.out.println("new head is generated");
+					return;
+				}
+
+				else{
+					node tmp = head;
+					while(tmp!=null){
+						if (tmp.getLeft()==null){
+							tmp.addLeft(newNode);
+							return;
+						}
+						else if (tmp.getRight()==null){
+							tmp.addRight(newNode);
+							return;
+						}
+						else{//randomly find a next node
+						double num=Math.random();
+						if(num<0.5){
+							tmp = tmp.getLeft();
+						}
+						else{
+							tmp=tmp.getRight();
+						}
+						}
+					}
+				}
+			}
+}
