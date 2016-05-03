@@ -22,6 +22,9 @@ public class node {
 		public node getLeft(){
 			return this.left;
 		}
+		public int getVal(){
+			return this.val;
+		}
 		public node getRight(){
 			return this.right;
 		}

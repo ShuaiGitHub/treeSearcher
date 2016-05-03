@@ -7,8 +7,13 @@ public class Main {
 			System.out.println(i);
 			tree.addNode(new node(i));
 		}
-		tree.printTree();
-		node testNode=new node(101);
-				tree.searchNode(testNode);
+		//tree.printTree();
+		node testNode=new node(58);
+				if(tree.searchNode(testNode,tree.getHead())==null){
+					System.out.println("Not found");
+				}
+				else{
+					System.out.printf("found the node %d",testNode.getVal());
+				}
 	}
 }

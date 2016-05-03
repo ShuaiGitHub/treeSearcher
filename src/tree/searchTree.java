@@ -2,7 +2,7 @@ package tree;
 import java.util.Random;
 import java.util.Stack;
 public class searchTree {
-			node head;	
+			node head;
 			public searchTree(){
 				head=null;
 			}
@@ -17,7 +17,27 @@ public class searchTree {
 					DFS(head);
 				}
 			}
-			public void searchNode(node cur)
+			public node searchNode(node cur,node start){
+				if(start==null){
+					return null;
+				}
+				else if(cur.getVal()==start.getVal()){
+					return start;
+				}
+				else {
+							node node_1=searchNode(cur,start.getLeft());
+							node node_2=searchNode(cur,start.getRight());
+						if (node_1!=null){
+							return node_1;
+						}
+						else if (node_2!=null){
+							return node_2;
+						}
+						else {
+							return null;
+						}
+				}
+			}
 			public void DFS(node cur){
 				if(cur==null){
 					return;
