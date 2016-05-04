@@ -1,10 +1,12 @@
 package tree;
 import java.util.Random;
-import java.util.Stack;
+import java.util.HashMap;
 public class searchTree {
 			node head;
+			HashMap<Integer,node> dic;
 			public searchTree(){
 				head=null;
+				dic = new HashMap<Integer,node>();
 			}
 			public node getHead(){
 				return head;
@@ -17,6 +19,10 @@ public class searchTree {
 					DFS(head);
 				}
 			}
+			public node searchHash(node cur){
+				int val= cur.getVal();
+				return dic.get(val);
+				}
 			public node searchNode(node cur,node start){
 				if(start==null){
 					return null;
@@ -51,6 +57,7 @@ public class searchTree {
 			public void addNode(node newNode){
 				if (head==null){
 					head=newNode;
+					dic.put(head.getVal(),head);
 					System.out.println("new head is generated");
 					return;
 				}
@@ -60,10 +67,12 @@ public class searchTree {
 					while(tmp!=null){
 						if (tmp.getLeft()==null){
 							tmp.addLeft(newNode);
+							dic.put(newNode.getVal(),newNode);
 							return;
 						}
 						else if (tmp.getRight()==null){
 							tmp.addRight(newNode);
+							dic.put(newNode.getVal(),newNode);
 							return;
 						}
 						else{//randomly find a next node
