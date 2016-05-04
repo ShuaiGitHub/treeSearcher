@@ -27,7 +27,7 @@
       5. getHead():  
       return the head node.  
 ### Main.java  
-  It contains Main class that can run from the beginning. The Main java creats a tree with 100 nodes.
+  It contains Main class that should run first. The Main java creats a tree with 100 nodes. then it tests "searchNode" function with a node with value 58 and a node with value 101.
 ### searchTree.java  
   searchTree.java contains searchTree.class, this class implements functions for building a tree, search for a node in a given tree.  
   @val:  
