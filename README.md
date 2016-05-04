@@ -40,5 +40,6 @@
     Helper method perform depth-first-search for the current tree.  
   4. printTree():  
      Use DFS to perform a pre-order traversal of the tree.  
+
 ### treeTester.java  
   it tests whether the tree is robust for empty tree. It also test whether the search tree can perform the search function. This java class implement jUnit test.
