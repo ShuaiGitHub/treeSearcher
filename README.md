@@ -12,35 +12,36 @@
 ### node.java  
   1. node.java contains class for tree node  
   @val:  
-    1. <int> value for the node
-    2. <node> left for left child
-    3. <node> right for right child
-  @functions:  
-      1. getLeft():  
-      get the left child of node  
-      2. getRight():  
-      get the right child of node  
-      3. addRight(<node>):  
-      add the given node as current node's left child  
-      4. addRight(<node>):   
-      add the given node as current node's right child  
-      5. getHead():  
-      return the head node.  
+    1. <int> value for the node  
+    2. <node> left for left child   
+    3. <node> right for right child  
+ 
+ @functions:  
+  1. getLeft():  
+    get the left child of node  
+  2. getRight():  
+    get the right child of node  
+  3. addRight(<node>):  
+    add the given node as current node's left child  
+  4. addRight(<node>):   
+    add the given node as current node's right child  
+  5. getHead():  
+    return the head node.  
 ### Main.java  
   It contains Main class that should run first. The Main java creats a tree with 100 nodes. then it tests "searchNode" function with a node with value 58 and a node with value 101. 58 should be "found" while 101 should not be "found".
 ### searchTree.java  
   searchTree.java contains searchTree.class, this class implements functions for building a tree, search for a node in a given tree.  
   @val:  
-  1. <node> head for the head of the tree  
+    1. <node> head for the head of the tree  
   @functions:
-  1. searchNode(<node> cur, <node> start):  
-     perform a Depth first search for given node cur based on value.  
-  2. addNode(<node> cur):  
-     add a node to the current tree. If current tree doesn't have a node, then the node is used as head.  
-  3. DFS(<node> cur):  
-    Helper method perform depth-first-search for the current tree.  
-  4. printTree():  
-     Use DFS to perform a pre-order traversal of the tree.  
+    1. searchNode(<node> cur, <node> start):  
+      perform a Depth first search for given node cur based on value.  
+    2. addNode(<node> cur):  
+      add a node to the current tree. If current tree doesn't have a node, then the node is used as head.  
+    3. DFS(<node> cur):  
+      Helper method perform depth-first-search for the current tree.  
+    4. printTree():  
+      Use DFS to perform a pre-order traversal of the tree.  
 
 ### treeTester.java  
   it tests whether the tree is robust for empty tree. It also test whether the search tree can perform the search function. This java class implement jUnit test.
