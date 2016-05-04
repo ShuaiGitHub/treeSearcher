@@ -8,12 +8,17 @@ public class Main {
 			tree.addNode(new node(i));
 		}
 		//tree.printTree();
-		node testNode=new node(58);
-				if(tree.searchNode(testNode,tree.getHead())==null){
-					System.out.println("Not found");
-				}
-				else{
-					System.out.printf("found the node %d",testNode.getVal());
-				}
+		testSearchNode(new node(58),tree);
+		testSearchNode(new node(101),tree);
+
+	}
+	public static void testSearchNode(node cur,searchTree tree){
+		node found = tree.searchNode(cur,tree.getHead());
+		if(found==null){
+			System.out.printf("Not found the node %d\n",cur.getVal());
+		}
+		else{
+			System.out.printf("found the node %d\n",found.getVal());
+		}
 	}
 }
