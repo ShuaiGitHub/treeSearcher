@@ -3,11 +3,12 @@
 ### Goal of this Project  
   The java package generates a random binary tree with <int> as each node's value. The goal of this project is to implement search function by RC admission. There are two requirments for the search function to be finished: 1) return the node if it is found 2) return null if it is not found in the given tree.  
 ### How to run this package  
-    1. download the whole zip file. to your local path. Unzip it.  
+    1. download the whole zip file to your local path. Unzip it.  
     2. open Eclipse.  
-    3.  Click on "File"-->"Import"-->"Exsiting projects into workspace"-->"select root directory"-->finish.
-    4. run Main.java for a demo of searchNode function. A node 58 should be "found", while a node 101 should be "not found".
-    5. run TreeTester.java for unit test on searchTree class.
+    3. Click on "File"-->"Import"-->"Exsiting projects into workspace"-->"select root directory"
+    4. Choose the folder you just unzip, then finish.
+    5. run Main.java for a demo of searchNode function. A node 58 should be "found", while a node 101 should be "not found".
+    6. run TreeTester.java for unit test on searchTree class.
 ### node.java  
   1. node.java contains class for tree node  
   @val:  
