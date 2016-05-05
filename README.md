@@ -1,7 +1,7 @@
 # treeSearcher
 
 ### Goal of this Project  
-  The java package generates a random binary tree with <int> as each node's value. The goal of this project is to implement search function by RC admission. There are two requirments for the search function to be finished: 1) return the node if it is found 2) return null if it is not found in the given tree.  
+  The java package generates a random binary tree with <int> as each node's value. The goal of this project is to implement search function for RC admission. There are two requirments for the search function to be finished: 1) return the node if it is found 2) return null if it is not found in the given tree.  
 
 ### How to run this package  
     1. download the whole zip file to your local path. Unzip it.  
