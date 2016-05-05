@@ -46,6 +46,8 @@
       Helper method perform depth-first-search for the current tree.  
     4. printTree():  
       Use DFS to perform a pre-order traversal of the tree.  
+    5. searchHash(<node>):
+      This is a more general method that use hashMap to search the node. The hash map is created when the node is inserted.
 
 ### treeTester.java  
   it tests whether the tree is robust for empty tree. It also test whether the search tree can perform the search function. This java class implement jUnit test.
