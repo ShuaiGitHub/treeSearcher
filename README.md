@@ -46,7 +46,7 @@
     4. printTree():  
       Use DFS to perform a pre-order traversal of the tree.  
     5. searchHash(<node>):
-      This is a more general method that use hashMap to search the node. The hash map is created when the node is inserted.
+      This is a more general method that use hashMap to search the node. The hash map is created when the node is inserted.  
     6. getHead():  
     return the head node. 
 
