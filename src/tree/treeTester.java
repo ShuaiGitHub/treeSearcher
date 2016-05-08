@@ -31,7 +31,7 @@ public class treeTester {
 	public void testGet(){
 		try {		
 		node test_2 = new node(58);
-		assertEquals("check second case",58,realTree.searchHash(test_2));
+		assertEquals("check second case",58,realTree.searchNode(test_2));
 		}
 		catch (NullPointerException e){
 			

@@ -1,5 +1,5 @@
 package tree;
-
+import java.util.HashMap;
 public class Main {
 	public static void main(String[] args){
 		searchTree tree=new searchTree();
@@ -7,13 +7,13 @@ public class Main {
 			//System.out.println(i);
 			tree.addNode(new node(i));
 		}
-		//tree.printTree();
+		tree.printTree();
 		testSearchNode(new node(58),tree);
 		testSearchNode(new node(101),tree);
 
 	}
 	public static void testSearchNode(node cur,searchTree tree){
-		node found = tree.searchNode(cur,tree.getHead());
+		node found = tree.searchNode(cur);
 		if(found==null){
 			System.out.printf("Not found the node %d\n",cur.getVal());
 		}
