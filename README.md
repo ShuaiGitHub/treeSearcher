@@ -27,8 +27,7 @@
     add the given node as current node's left child  
   4. addRight(<node>):   
     add the given node as current node's right child  
-  5. getHead():  
-    return the head node.  
+ 
 
 ### Main.java  
   It contains Main class that should run first. The Main java creats a tree with 100 nodes. then it tests "searchNode" function with a node with value 58 and a node with value 101. 58 should be "found" while 101 should not be "found".
@@ -48,6 +47,8 @@
       Use DFS to perform a pre-order traversal of the tree.  
     5. searchHash(<node>):
       This is a more general method that use hashMap to search the node. The hash map is created when the node is inserted.
+    6. getHead():  
+    return the head node. 
 
 ### treeTester.java  
-  it tests whether the tree is robust for empty tree. It also test whether the search tree can perform the search function. This java class implement jUnit test.
+  it tests whether the tree is robust for empty tree. It also test whether the search tree can perform the search function. This java class implements a jUnit test.
